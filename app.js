@@ -39,7 +39,9 @@ function updateScore(player, opponent) {
       player.display.classList.add("winner");
       opponent.display.classList.add("loser");
       player.button.disabled = true;
+      player.button.style.backgroundColor = "#9EF1C5";
       opponent.button.disabled = true;
+      opponent.button.style.backgroundColor = "#96FFC7";
     }
     player.display.textContent = player.score;
   }
@@ -63,6 +65,7 @@ function reset() {
     p.display.textContent = 0;
     p.display.classList.remove("winner", "loser");
     p.button.disabled = false;
+    p.button.style.backgroundColor = "#2cb36b";
   }
 }
 function winnerReset() {
