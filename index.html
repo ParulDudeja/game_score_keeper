@@ -8,14 +8,38 @@
     <title>Java Script practice project 1- ping pong game score keeper</title>
   </head>
   <body>
-    <h1>
-      <span id="p1-display">0</span> of
-      <span id="p2-display">0</span>
-    </h1>
-    <button id="btn1">+1 Player one</button>
-    <button id="btn2">+1 Player two</button>
-    <button id="reset">Reset</button>
-
+    <section>
+      <div>
+        <h1>
+          <span id="p1-display">0</span> of
+          <span id="p2-display">0</span>
+        </h1>
+        <p>Select upto</p>
+        <div>
+          <select id="play-upto">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+        <div>
+          <button id="btn1">+1 Player one</button>
+          <button id="btn2">+1 Player two</button>
+          <button id="reset">Reset</button>
+        </div>
+      </div>
+      <div>
+        <h3>Total win</h3>
+        <p>Player 1: <span id="p1-win-counter">0</span></p>
+        <p>Player 2: <span id="p2-win-counter">0</span></p>
+        <button id="winner-reset">Win Reset</button>
+      </div>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>
