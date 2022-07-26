@@ -28,7 +28,7 @@ section {
   left: 20%;
   translate: (-50%, -50%);
   box-shadow: 0.5rem 1rem 1rem 2rem rgba(255, 255, 255, 0.7);
-
+  border-radius: 1rem;
   margin: 2rem;
 }
 .winner {
@@ -63,6 +63,7 @@ section {
 }
 .buttons {
   margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 
 .buttons-p {
@@ -81,4 +82,28 @@ section {
 }
 h3 {
   margin: 0.3rem 0;
+}
+/* small screen */
+/* @media only screen and (max-width: 480px) { */
+@media only screen and (max-width: 767px) {
+  section {
+    text-align: center;
+    top: 8%;
+    left: 0;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+  .heading2 {
+    font-size: 1rem;
+  }
+  .buttons-p {
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  section {
+    top: 8%;
+    left: 1%;
+  }
 }
